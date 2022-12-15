@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../JS/calcularValores.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <img src="" alt="" srcset="">
+    <form action="" method="get">
+        <fieldset>
+            <legend><h4>Colocar a Quantidade de Itens Alterado:</h4></legend>
+           
+            <label for="Acessorios">Acessorios:</label>
+            <br>
+            <input type="button" value="-" onclick="calcularValores(1,0,0)">
+            <input type="text" size="1" value="0" disabled name="txAcessorios" id="txAcessorios">
+            <input type="button" value="+" onclick="calcularValores(1,0,1)">
+            <br>
+            <br>
+            <label for="nPintura">Pinturas:</label>
+            <br>
+            <input type="button" value="-" onclick=" calcularValores(2,0,0)">
+            <input type="text" size="1" value="0" disabled name="txnPintura" id="txnPintura">
+            <input type="button" value="+" onclick="calcularValores(2,0,1)">
+            <br>
+            <br>
+            <label for="Buzina" class="checkboxL">Buzina:</label>
+            <br>
+            <input type="checkbox" name="Buzina" id="Buzina" class="check" onclick="calcularValores(19,0,1)">
+            <br>
+            <label for="Placa"  class="checkboxL" >Alterou a Placa:</label>
+            <br>
+            <input type="checkbox" name="Placa" id="Placa" class="check" onclick="calcularValores(13,0,1)">
+            <br>
+            <label for="Adesivo"  class="checkboxL" >Adesivo Trocado?</label>
+            <br>
+            <input type="checkbox" name="Adesivo" id="Adesivo" class="check" onclick="calcularValores(12,0,1)">
+            <br>
+            <label for="pelicula"  class="checkboxL">Instalação de Pelicula:</label>
+            <br>
+            <input type="checkbox" name="pelicula" id="pelicula" class="check"  onclick="calcularValores(7,0,1)">
+            <br>
+            <br>
+            <label for="Rodas"class="subtitulo">Rodas:</label>
+            <br>
+            <label for="Rodas" class="checkboxL" >Substituida?</label>
+            <br>
+            <input type="checkbox" name="Rodas" id="Rodas" class="check"  onclick="calcularValores(4,0,1)">
+            <br>
+            <label for="RodasC"  class="checkboxL" >Rodas Custumizavel?</label>
+            <br>
+            <input type="checkbox" name="RodasC" id="RodasC" class="check" onclick="calcularValores(5,0,1)">
+            <br>
+            <label for="RodasF"  class="checkboxL" >Cor da Fumaça?</label>
+            <br>
+            <input type="checkbox" name="RodasF" id="RodasF" class="check"  onclick="calcularValores(6,0,1)">
+
+            <br>
+            <br>
+            <label for="" class="subtitulo">Neon:</label>
+            <br>
+            <label for="neon" class="checkboxL" >Habilitado?</label>
+            <br>
+            <input type="checkbox" name="neon" id="neon" class="check" onclick="calcularValores(8,0,1)"> 
+            <br>
+            <label for="neon"  class="checkboxL" >Cor Alterada?</label>
+            <br>
+            <input type="checkbox" name="neonC" id="neonC" class="check"  onclick="calcularValores(9,0,1)">
+            <br>
+            <br>
+            <label for=""class="subtitulo">Xenon:</label>
+            <br>
+            <label for="xenon" class="checkboxL" >Habilitado?</label>
+            <br>
+            <input type="checkbox" name="xenon" id="Xenon" class="check" onclick="calcularValores(10,0,1)">
+            <br>
+            <label for="XenonC"  class="checkboxL" >Cor Alterada?</label>
+            <br>
+            <input type="checkbox" name="XenonC" id="XenonC" class="check" onclick="calcularValores(11,0,1)">
+            <br>
+            <br>
+        
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h4>Preencher com o nivel da Performance Alterado!</h4></legend>
+            <div id="Performance">
+
+
+               
+                
+                <label for="nMotor">Motor:</label>
+                <br>
+                <input type="button" value="Limpar" onclick=" calcularValores(14,0,0)" id="limparVlMotor" disabled>
+                <input type="number" name="nMotor" value="0" id="nMotor" min="0" max="5" maxlength="1">
+                <input type="button" value="Add" onclick="calcularValores(14,0,1)" id="addVlMotor">
+                <label for="XenonC"  class="checkboxL" >Full?</label>
+                <input type="checkbox" name="MotorFull" id="MotorFull" class="check" onclick="PerformanceFull()">
+                <br>
+                <br>
+                <label for="nFreio">Freio:</label>
+                <br>
+                <input type="button" value="Limpar" onclick=" calcularValores(15,0,0)" id="limparVlFreio" disabled>
+                <input type="number" name="nFreio" value="0" id="nFreio" min="0" max="5" maxlength="1">
+                <input type="button" value="Add" onclick="calcularValores(15,0,1)" id="addVlFreio">
+                <label for="XenonC"  class="checkboxL" >Full?</label>
+                <input type="checkbox" name="FreioFull" id="FreioFull" class="check" onclick="PerformanceFull()">
+                <br>
+                <br>
+                <label for="nTrans">Transmissão:</label>
+                <br>
+                <input type="button" value="Limpar" onclick=" calcularValores(16,0,0)" id="limparVlTrans" disabled>
+                <input type="number" name="nTrans" value="0" id="nTrans" min="0" max="5" maxlength="1">
+                <input type="button" value="Add" onclick="calcularValores(16,0,1)" id="addVlTrans">
+                <label for="XenonC"  class="checkboxL" >Full?</label>
+                <input type="checkbox" name="TransmissaoFull" id="TransmissaoFull" class="check" onclick="PerformanceFull()">
+                <br>
+                <br>
+                <label for="nSusp">Suspensão:</label>
+                <br>
+                <input type="button" value="Limpar" onclick=" calcularValores(17,0,0)" id="limparVlSusp" disabled>
+                <input type="number" name="nSusp" value="0" id="nSusp" min="0" max="5" maxlength="1">
+                <input type="button" value="Add" onclick="calcularValores(17,0,1)" id="addVlSusp">
+                <label for="XenonC"  class="checkboxL" >Full?</label>
+                <input type="checkbox" name="SuspensaoFull" id="SuspensaoFull" class="check" onclick="PerformanceFull()">
+                <br>
+                <br>
+                <label for="nBlind">Blindagem:</label>
+                <br>
+                <input type="button" value="Limpar" onclick=" calcularValores(18,0,0)" id="limparVlBlind" disabled>
+                <input type="number" name="nBlind" value="0" id="nBlind" min="0" max="5" maxlength="1">
+                <input type="button" value="Add" onclick="calcularValores(18,0,1)" id="addVlBlind">
+                <br>
+                <br>
+                <label for="turbo" class="checkboxL">Turbo:</label>
+                <input type="checkbox" name="turbo" id="turbo" class="check" onclick="calcularValores(3,0,1)">
+
+                <h5>Clicar em ADD, apos informar o nivel da Performance!</h5>
+                <h5>Caso esteja no ultimo nivel, marcar o checkbox Full!</h5>
+
+            </div>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h4>Fechamento do Pedido: </h4></legend>
+
+
+            
+
+            <label for="precoCusto">Valor de Custo:</label> 
+            <br><input disabled type="text" name="precoCusto"  id="precoCusto" class="valores">
+            <br>
+            <label for="precoVenda:"> Valor de Venda:</label> 
+            <br> 
+            <input disabled type="text" name="precoVenda" id="precoVenda" class="valores">
+            <br>
+            <label for="lucro"> Valor de Lucro:</label> 
+            <br>
+            <input disabled type="text" name="lucro" id="lucro" class="valores" >
+
+        </fieldset>
+
+
+
+    </form>
+</body>
+
+</html>

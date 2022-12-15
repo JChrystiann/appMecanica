@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "erasbd";
+    src: url("../fonts/ERASBD.TTF"), url("../fonts/ERASMD.TTF") format('truetype'), url('../fonts/ERASLGHT.TTF') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+button{
+    border-radius: 20px;
+    position: relative;
+}
+
+input{
+    text-align: center;
+    position: relative;
+}
+
+img{
+    position: absolute;
+    opacity: 0.2;
+    width: 15%;
+    
+}
+
+.check{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0 ;
+    vertical-align: middle;
+    position: relative;
+    top: -1px
+}
+
+fieldset{
+    border-radius: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+fieldset legend{
+    font-family: "erasbd";
+    text-align: center;
+}
+
+fieldset label{
+    font-family: "erasbd";
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 50%;
+}
+
+.checkboxL{
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.subtitulo{
+    font-family: "erasbd";
+    font-size: 18px;
+    font-weight: bold;
+    color:brown;
+}
+
+.valores{
+    border-radius: 30px;
+    font-size: 18px;
+    color:brown;
+}
+
+h5{
+    color: red;
+    margin: 0cm;
+}
+
