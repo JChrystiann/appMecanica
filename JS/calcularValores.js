@@ -24,24 +24,24 @@ var ckturbo= false, ckturbo= false;
 
 //PREÇOS DE CUSTO DE CADA CATEGORIA:
 precoCusto = {
-    cosmetics: 1000,
-    respray: 1000,
-    turbo: 7250,
-    wheels: 950,
-    customwheels: 950,
-    wheelsmoke: 550,
-    windowtint: 550,
-    neonside: 1000,
-    neoncolours: 550,
-    headlights: 250,
-    xenoncolours: 550,
-    policelivery: 125,
-    plateindex: 1000,
-    engines : [ 0, 6125, 11125, 16125, 21125, 26125 ],
-    brakes : [ 0, 11125, 16125, 21125, 26125, 31125 ],
-    transmission : [ 0, 8625, 13625, 18625, 23625, 28625 ],
-    suspension : [ 0, 6125, 11125, 16125, 21125, 26125 ],
-    shield: [0, 27250, 42250, 57250, 72250, 87250],
+    cosmetics : 5000,
+    respray : 5000,
+    engines : [ 1, 12125, 20125, 28125, 36125, 42125 ],
+    brakes : [ 1, 17125, 21125, 28125, 33125, 38125 ],
+    transmission : [ 1, 12625, 17625, 22625, 27625, 33625 ],
+    suspension : [ 1, 12125, 17125, 23125, 28125, 32125 ],
+    shield : [ 1, 22250, 32250, 47250, 62250, 68250 ],
+    turbo : 15250,
+    wheels : 2250,
+    customwheels : 1950,
+    wheelsmoke : 1250,
+    windowtint : 1800,
+    neonside : 3000,
+    neoncolours : 1250,
+    headlights : 1250,
+    xenoncolours : 1550,
+    policelivery : 125,
+    plateindex : 1550
 }
 
 
